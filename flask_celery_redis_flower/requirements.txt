@@ -1,0 +1,5 @@
+Flask==3.0.3
+Celery==5.4.0
+redis==5.1.1
+flower==2.0.1
+celery[redis]
