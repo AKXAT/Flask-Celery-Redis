@@ -53,6 +53,7 @@ tests/.pytest_cache/
 
 # Logs
 *.log
+flask_celery_redis_flower/dump.rdb
 
 # Environment variables
 .env

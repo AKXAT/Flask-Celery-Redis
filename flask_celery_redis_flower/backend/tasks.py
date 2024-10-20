@@ -9,7 +9,7 @@ def add(x, y):
 @current_app.task
 def long_task():
     import time
-    for i in range(10):
+    for i in range(300):
         print(f"Running step {i}...")
-        time.sleep(1)  # Simulate a time-consuming task
+        time.sleep(10)  # Simulate a time-consuming task
     return "Task complete!"
