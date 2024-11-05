@@ -32,7 +32,7 @@ def start_long_task():
 # Route to check task status
 @main.route('/status/<task_id>', methods=['GET'])
 def task_status(task_id):
-    task = add.AsyncResult(task_id)
+    task = long_task.AsyncResult(task_id)
 
     if task.state == 'PENDING':
         response = {
